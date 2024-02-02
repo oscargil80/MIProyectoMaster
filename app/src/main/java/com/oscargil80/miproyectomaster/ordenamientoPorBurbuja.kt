@@ -2,7 +2,8 @@ package com.oscargil80.miproyectomaster
 
 fun main(){
 
-    var ds= arrayOf(5,4,3,1,2)
+    var ds= arrayOf(5,2,3,1,4)
+
     var aux:Int = 0
 
 
@@ -20,13 +21,13 @@ fun main(){
     }
 
     for(i in ds.indices)
-        println("indice con [] "+ds[i])
+        println("indice con []   "+ds[i])
 
     for(i in ds.indices)
-        println("Indice con .get"+ds.get(i))
+        println("Indice con .get "+ds.indexOf(i))
 
     for(i in ds)
-        println("simple"+i)
+        println("simple    "+i)
 
 
     /// pongo Hola porque me da la gana
