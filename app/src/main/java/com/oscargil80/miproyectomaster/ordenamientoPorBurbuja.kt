@@ -20,14 +20,17 @@ fun main(){
         }
     }
 
-    for(i in ds.indices)
-        println("indice con []   "+ds[i])
+//    for(i in ds.indices)
+//        println("indice con []   "+ds[i])
+//
+//    for(i in ds.indices)
+//        println("Indice con .get "+ds.indexOf(i))
 
-    for(i in ds.indices)
-        println("Indice con .get "+ds.indexOf(i))
+    for( i in ds)
+        println(" $i simpl  "+ds.indexOf(i))
 
-    for(i in ds)
-        println("simple    "+i)
+//    for( (i, value) in ds.withIndex() )
+//        println("$i simple    $value")
 
 
     /// pongo Hola porque me da la gana
