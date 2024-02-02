@@ -20,7 +20,14 @@ fun main(){
     }
 
     for(i in ds.indices)
-        println("hi how "+ds[i])
+        println("indice con [] "+ds[i])
+
+    for(i in ds.indices)
+        println("Indice con .get"+ds.get(i))
+
+    for(i in ds)
+        println("simple"+i)
+
 
     /// pongo Hola porque me da la gana
 }
