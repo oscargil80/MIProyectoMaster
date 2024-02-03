@@ -1,11 +1,10 @@
 package com.oscargil80.miproyectomaster
 
 fun main(){
-
     var ds= arrayOf(5,2,3,1,4)
-
     var aux:Int = 0
-
+    var nombre:String = "Oscar"
+    primero(nombre)
 
     for (i in 0 .. ds.size-1)
     {
@@ -19,6 +18,8 @@ fun main(){
             }
         }
     }
+
+
 
     for(i in ds.indices)
         println("indice con []   "+ds[i])
@@ -35,3 +36,9 @@ fun main(){
 
     /// pongo Hola porque me da la gana
 }
+
+fun primero(nombre:String)
+{
+    println("indice con [] " )
+}
+
