@@ -16,7 +16,6 @@ fun getSemester(month: Int) {
 
 }
 
-
 fun getMonth(month: Int) {
     when (month) {
         1 -> print("Enero")
