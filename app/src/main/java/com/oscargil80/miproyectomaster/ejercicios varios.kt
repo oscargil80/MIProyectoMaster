@@ -24,15 +24,35 @@ fun main (){
 //         var n = 10.0
 //         println("La sum de cuadrados de $n = " + sCuadrados(n))
 
-    var hTrabajadas:Int = 50
-    var sPorHora = 18.5
-    println("El sueldo de este trabajador luego de haber trabajado $hTrabajadas Horas con un Sueldo por Hora de $sPorHora es  de "+cSalario(hTrabajadas, sPorHora))
+//    var hTrabajadas:Int = 50
+//    var sPorHora = 18.5
+//    println("El sueldo de este trabajador luego de haber trabajado $hTrabajadas Horas con un Sueldo por Hora de $sPorHora es  de "+cSalario(hTrabajadas, sPorHora))
+//    println("El sueldo de este trabajador luego de haber trabajado $hTrabajadas Horas con un Sueldo por Hora de $sPorHora es  de ${hTrabajadas*sPorHora}")
+
+//    var num:Int = 246;     var a:Int = num/100 ;    var b:Int = num % 100 / 10
+//    var c:Int = num % 10
+//    println("Dado el numero $num el inverso es $c$b$a")
+
+//    var r = 10 ;    var R = -3;     var to = 16;   var n = 20.0 ;    var a = r/2;     var b = R-a;     var c = to
+//    var t20 = (5 * (n.pow(2) )+ (b*n) ) + c
+//    println(t20)
+
+    println("Ingrese los siguientes datos ")
+    println("Ingrese el primer coeficiente de segundo grado: ")
+    var a = readLine()!!.toInt()
+
+    println("Ingrese el Segundo coeficiente de segundo grado: ")
+    var b = readLine()!!.toInt()
+
+    println("Ingrese el Tercer coeficiente de segundo grado: ")
+    var c = readLine()!!.toInt()
+
 }
+
 
 fun cSalario(hTrabajadas:Int, sPorHora:Double):Double{
     return hTrabajadas * sPorHora
 }
-
 fun sCuadrados(n:Double):Double{
     return  (n*(n+1) ) * ( 2*n + 1)  /6
 }
