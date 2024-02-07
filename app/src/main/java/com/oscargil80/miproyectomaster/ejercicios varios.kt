@@ -13,8 +13,10 @@ fun main (){
 
     // De horas a minutos
     var hora:Int = 5
-    println("$hora Horas son "+ aMin(hora)+" Minutos ")
-    println("$hora Horas son "+ aSeg(hora)+" Segundos ")
+//    println("$hora Horas son "+ aMin(hora)+" Minutos ")
+//    println("$hora Horas son "+ aSeg(hora)+" Segundos ")
+    var nroMen:Int = 10 ;    var nroMay:Int = 19
+    println( "La cantida de numeros entre $nroMen y $nroMay  es "+hayNum(nroMen, nroMay))
 }
 
 fun areaTri(base:Int, altura:Int):Int{
@@ -27,6 +29,10 @@ fun aMin(hora:Int):Int{
 
 fun aSeg(hora:Int):Int{
     return (aMin(hora)*60)
+}
+
+fun hayNum(nroMen:Int, nroMay:Int):Int{
+    return (nroMay-nroMen) - 1
 }
 
 
