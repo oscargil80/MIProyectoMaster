@@ -8,6 +8,7 @@ fun main(){
     tipTriangulos()
 
 }
+
  fun descuento(){
     var coste:Double
     val montoDescuento:Double =  50.0
