@@ -1,13 +1,26 @@
 package com.oscargil80.miproyectomaster
 
 fun main(){
-    //descuento()
-  //  siPar()
-   // mul3Y5()
-    //cifra0()
-    tipTriangulos()
-
+    //descuento()   //  siPar()    // mul3Y5()     //cifra0()     //tipTriangulos()
+    arrays();
 }
+/*for(i in ds.indices)
+println("indice con []   "+ds[i]) */
+fun arrays(){
+     var numero = intArrayOf(10,20,13,40,25,76,17)
+
+    for ( (i, value)  in numero.withIndex())
+    {
+        println("Hola - $i mas $value")
+    }
+
+    for ( i  in numero)
+    {
+        println("Hola - $i")
+    }
+}
+
+
 
  fun descuento(){
     var coste:Double
