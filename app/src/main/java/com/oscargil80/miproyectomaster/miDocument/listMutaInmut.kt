@@ -3,16 +3,16 @@ package com.oscargil80.miproyectomaster.miDocument
 
 
 fun main  (){
-//    var list = listOf(1,2,5,8,7,6) // No se puede Modificar porque no es mutable
-//    var list2 = listOf(1,2,5,3,7,6)
-//    println("Lista Completa  \n $list")
-//    println("Un elemento de la lista en este caso el 3er  \n ${list.indexOf(2)}") // Pendiente de las llaves
-//    println("Muestra los elementos desde un indice a  otro \n ${list.subList(1,5)}") // Pendiente de las llaves
-//    println(" muestra el indice mayor ${list.lastIndex}")
-//    println(" Muestra el indice del elemento 3 ${list.lastIndexOf(3)}") // Devuelve el indice del elemtno especificado sino esta en la lista da -1
-//    println(" Me dice si el elemtno esta  ${list.contains(3)}") // Me dice true si el elemento esta en la lista y false sino esta
-//    println(" Me voltea la lista "  +  list.asReversed())
-//    println(" Compara 2 listas "  +  list.containsAll(list2))
+    var list = listOf(1,2,5,8,7,6) // No se puede Modificar porque no es mutable
+    var list2 = listOf(1,2,5,3,7,6)
+    println("Lista Completa  \n $list")
+    println("Un elemento de la lista en este caso el 3er  \n ${list.indexOf(2)}") // Pendiente de las llaves
+    println("Muestra los elementos desde un indice a  otro \n ${list.subList(1,5)}") // Pendiente de las llaves
+    println(" muestra el indice mayor ${list.lastIndex}")
+    println(" Muestra el indice del elemento 3 ${list.lastIndexOf(3)}") // Devuelve el indice del elemtno especificado sino esta en la lista da -1
+    println(" Me dice si el elemtno esta  ${list.contains(3)}") // Me dice true si el elemento esta en la lista y false sino esta
+    println(" Me voltea la lista "  +  list.asReversed())
+    println(" Compara 2 listas "  +  list.containsAll(list2))
 
     //Inmutable List
 
