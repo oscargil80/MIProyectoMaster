@@ -21,7 +21,7 @@ fun main(){
     println("--------------")
     println(mapa2)
 
-    var mapa3 = mutableSetOf(mapa2.toSortedMap()) // lo iguala al mapa ordenado
+    var mapa3 = mapa2.toSortedMap() // lo iguala al mapa ordenado
     println("--------------")
     println(mapa3)
 
