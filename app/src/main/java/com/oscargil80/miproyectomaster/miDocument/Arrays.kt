@@ -5,7 +5,7 @@ import com.oscargil80.miproyectomaster.miDocument.hermanos
 fun main(){
 //    var arregloSim =DoubleArray(5)  {8.0} // se crea el arreglo asi o int, especificando que lleva 5 elementos y que cada uno lleva lel valo 8
 //
-//    var arreglo = arrayOf(5,2,5,9,8,7,4) // asi se crea el arreglo y creo que es la manera que lo hare yo por siempre
+    var arreglo = arrayOf(5,2,5,9,8,7,4) // asi se crea el arreglo y creo que es la manera que lo hare yo por siempre
 //    var arreglo2 = intArrayOf(1,9,5,3,7,4) // se crea el arreglo de tipo int
 //    var arregloDouble = doubleArrayOf(1.0, 5.0,80.0) // lo mismo de arroba pero Double, Strino no se puede
 //    var arregloString  = arrayOf<String>("Hola", "Como", "Estas") // los estring se crean asi
