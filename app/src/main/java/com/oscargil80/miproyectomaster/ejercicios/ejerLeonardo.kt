@@ -2,19 +2,17 @@ package com.oscargil80.miproyectomaster.ejercicios
 
 fun main(){
     //Ejercicio Numero 1
-    //println("Introduzca el valor para verificar si es Par  o Impar")
-    //println("El numero que has introducido es "+parImpar(readLine()!!.toInt() ))
+    println("Introduzca el valor para verificar si es Par  o Impar")
+    println("El numero que has introducido es "+parImpar(readLine()!!.toInt() ))
     /////
   ///Ejercicio 2
-    //var lista = arrayOf(1f,4f,15f)
-    //println("La suma de los numeros introducidos dan un total final "+Sumar(lista))
+  var lista = arrayOf(1f,4f,15f)
+   println("La suma de los numeros introducidos dan un total final "+Sumar(lista))
     //////Ejercicio 3
-//    var numDes = arrayOf(10,15,20,2,7,8,6,28,90,50,66,77)
-//    println("Los numeros del arreglo  que son pares son  ---->  ${ordPar(numDes).contentToString()}  y estan ordenados ")
-//    ordPar(numDes)
+    var numDes = arrayOf(10,15,20,2,7,8,6,28,90,50,66,77)
+    println("Los numeros del arreglo  que son pares son  ---->  ${ordPar(numDes).contentToString()}  y estan ordenados ")
+    ordPar(numDes)
 ////// Ejercicio 4
-//    println("... Example One ...")
-   // println((0..2).random())
     println("Introduzca un numero pasa bes si aciertas la posicion de la X ")
     println("la posicion que intentas de adivinar es "+   adivinaPos(readLine()!!.toInt()))
 }
@@ -28,9 +26,6 @@ fun main(){
  }
 
 
-
-
-
 fun ordPar(lista:Array<Int>):Array<Int>
 {
     var numOrd = arrayOf<Int>()
@@ -41,8 +36,6 @@ fun ordPar(lista:Array<Int>):Array<Int>
     return numOrd
 }
 
-
-
 fun parImpar (num: Int): String {
     var res = "impar"
     if(num % 2 == 0)   res =  "Par"   else  res = "Impar"
@@ -50,9 +43,9 @@ fun parImpar (num: Int): String {
 }
 
 fun Sumar (lista:Array<Float>):Float{
-    var tot:Float = 0f
-    for((i, value) in lista.withIndex())
-        tot = tot+value
+    var tot = 0f
+    for(i in lista)
+        tot = tot+i
     return tot
 }
 
