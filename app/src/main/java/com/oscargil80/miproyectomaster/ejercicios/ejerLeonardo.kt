@@ -22,8 +22,9 @@ fun main(){
 //     array.shuffle() para desordenar laos valores //     array.forEach { //         print(" $it,") //     }
      var aleatorio:Int = (0..2).random()
      array.set(aleatorio, "x")
-    // println(array.contentToString())
 
+    // println(array.contentToString())
+ //22
      if (num ==   array.indexOf("x"))   return "Correcto"  else  return "Incorrecto"
  }
 
