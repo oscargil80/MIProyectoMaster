@@ -1,22 +1,23 @@
 package com.oscargil80.miproyectomaster.ejeClasObj
 
-class Persona( var nombre: String,  var edad: Int , esEstudiante: Boolean = false)  {
+
+class Persona( var nombre: String,  var edad: Int , esEstudiante: Boolean = false) {
 
     init {
-       println("Nombre $nombre")
+        println("Nombre $nombre")
         println("Edad $edad")
         println("Estudiante? $esEstudiante")
 
     }
 
-    fun caminar(){
+    fun caminar() {
         println("Caminando ")
     }
 
-    fun comer(){
+    fun comer() {
         println("Comiendo")
     }
-
-
-
 }
+
+
+
