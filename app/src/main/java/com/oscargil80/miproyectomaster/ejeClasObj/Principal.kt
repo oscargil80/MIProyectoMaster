@@ -6,6 +6,7 @@ fun main(){
     oscar.caminar()
     oscar.comer()
     oscar.enseñar()
+     oscar.dormir()
 
     println("------**************-------------")
 
@@ -13,6 +14,7 @@ fun main(){
     linin.caminar()
     linin.comer()
     linin.jugar()
+    linin.dormir()
     println("------**************-------------")
 
 
@@ -20,6 +22,7 @@ fun main(){
     Edys.caminar()
     Edys.comer()
     Edys.Programar()
+    Edys.dormir()
 
     println("------**************-------------")
 
@@ -27,6 +30,7 @@ fun main(){
     Justyn.caminar()
     Justyn.comer()
     Justyn.enseñar()
+    Justyn.dormir()
 
     println("------**************-------------")
 
