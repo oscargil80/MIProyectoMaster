@@ -1,14 +1,15 @@
 package com.oscargil80.miproyectomaster.Persona
 
 
-open class Persona( var nombre: String,  var edad: Int , esEstudiante: Boolean = false) {
+open class Persona( var nombre: String,  var edad: Int , esEstudiante: Boolean = false): MiInterface {
 
-
+    override var datos: String
+        get() = "$nombre,$edad"
+        set(value) {}
     open var estatus:String = ""
 
     init {
-        println("Nombre $nombre")
-        println("Edad $edad")
+        println("Datos $datos")
         println("Estudiante? $esEstudiante")
         println("estatus $estatus")
 
@@ -24,6 +25,10 @@ open class Persona( var nombre: String,  var edad: Int , esEstudiante: Boolean =
 
    open  fun dormir() {
         println("Durmiendo")
+    }
+
+    override fun trabajar() {
+        println("Trabajando ")
     }
 }
 

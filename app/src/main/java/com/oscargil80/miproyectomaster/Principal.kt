@@ -1,8 +1,9 @@
-package com.oscargil80.miproyectomaster.Persona
+
+import com.oscargil80.miproyectomaster.Persona.Persona
 
 fun main(){
 
-    var oscar = Maestro("Oscar", 44)
+  /*  var oscar = Maestro("Oscar", 44)
     oscar.caminar()
     oscar.comer()
     oscar.enseñar()
@@ -32,6 +33,26 @@ fun main(){
     Justyn.enseñar()
     Justyn.dormir()
 
-    println("------**************-------------")
+    println("------**************-------------")*/
+
+/*var Rectangulo = Rectangulo()
+    Rectangulo.dibujar()
+    Rectangulo.rellenar()
+    println("Tiene un numero de lados de ${Rectangulo.lados}")
+
+    var Circulo = Circulo()
+    Circulo.dibujar()
+    Circulo.rellenar()
+    println("Tiene un numero de lados de ${Circulo.lados}")*/
+
+    var oscar = Persona("Oscar", 18)
+    oscar.trabajar()
+
+
+
+
+    //var figura = Figura() No se puede instanciar una clase abstracta
+
+
 
 }
