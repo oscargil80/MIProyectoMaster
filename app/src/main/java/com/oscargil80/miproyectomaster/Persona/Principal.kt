@@ -1,4 +1,4 @@
-package com.oscargil80.miproyectomaster.ejeClasObj
+package com.oscargil80.miproyectomaster.Persona
 
 fun main(){
 
