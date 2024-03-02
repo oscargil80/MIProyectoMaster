@@ -1,9 +1,9 @@
 package com.oscargil80.miproyectomaster.Nomina
 
-class sueldoAdmin( cedula: String, nombre:String, nivelEscala:String, condicion:String):administrativo(cedula, nombre, nivelEscala, condicion) {
+class sueldoAdmin():administrativo() {
 
     override fun calcularIngreso() {
-        println("Calculando Ingreso")
+        println( "Calculando Ingreso")
     }
 
     override fun calcularDeducciones() {
@@ -11,6 +11,6 @@ class sueldoAdmin( cedula: String, nombre:String, nivelEscala:String, condicion:
     }
 
     override fun sueldoFinal() {
-        println("Calculando Sueldo")
+        println("Calculando Sueldo Final ")
     }
 }
