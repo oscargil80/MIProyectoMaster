@@ -46,7 +46,8 @@ fun main(){
     println("Tiene un numero de lados de ${Circulo.lados}")*/
 
     var oscar = Persona("Oscar", 18)
-    oscar.trabajar()
+    oscar.nombre
+
 
 
 
