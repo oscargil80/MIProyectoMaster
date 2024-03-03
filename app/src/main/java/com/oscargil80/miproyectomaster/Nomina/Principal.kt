@@ -2,16 +2,31 @@ package com.oscargil80.miproyectomaster.Nomina
 
 fun main () {
 
-    var empleadoUnefm = sueldoAdmin()
 
-    println("Cedula Empleado  -->"+empleadoUnefm.cedula)
-    println("Nombre  Empleado -->"+empleadoUnefm.nombre)
-    println("Apellido Empleado -->"+empleadoUnefm.apellido)
-    println("Tipo Personal  Empleado -->"+empleadoUnefm.tipoPer)
-    println("Nivel y Escala  Empleado -->"+empleadoUnefm.nivelescala)
-    println("Condicion  Empleado --> "+empleadoUnefm.condicion)
-    empleadoUnefm.calcularIngreso()
-    empleadoUnefm.calcularDeducciones()
-    empleadoUnefm.sueldoFinal()
+
+    var empleadoAdmi = sueldoAdmin()
+    println("------------------------Datos Empleado------------------------------")
+    println("Cedula - ${empleadoAdmi.cedula}           Nombre y Apellido - ${empleadoAdmi.nombre } ${empleadoAdmi.apellido } ")
+    if (empleadoAdmi.tipoPer == "02")
+        println("Tipo de Personal - Administrativo, Nivel y Escala  ${empleadoAdmi.nivelescala} De Condicion ${empleadoAdmi.condicion} " )
+    else
+        println("Academico, Nivel y Escala  ${empleadoAdmi.nivelescala} | De Condicion ${empleadoAdmi.condicion} " )
+
+
+       empleadoAdmi.ingrAdm()
+       empleadoAdmi.deduAdm()
+       empleadoAdmi.suelFinAdm()
+
+   /* var empleadoAcad = SueldoAcademico()
+
+    println("Empleado | ${empleadoAcad.cedula} | ${empleadoAcad.nombre } ${empleadoAcad.apellido } |")
+    if (empleadoAcad.tipoPer == "02")
+       println("Administrativo, Nivel y Escala  ${empleadoAcad.nivelescala} | De Condicion ${empleadoAcad.condicion} " )
+    else
+        println("Academico, Nivel y Escala  ${empleadoAcad.nivelescala} | De Condicion ${empleadoAcad.condicion} " )
+    println("Hola"+ $empleadoAcad.ingresoscar)
+
+     empleadoAcad.calcularDeducciones()
+    empleadoAcad.sueldoFinal()*/
 }
 
