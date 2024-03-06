@@ -27,6 +27,16 @@ class sueldoAdmin():administrativo() {
         println("SEAUNEFM "+ V15460951.descuento.seaUnefm)
         println("Estacionamiento "+ V15460951.descuento.estacionamiento)
         println("Seguro Social "+ V15460951.descuento.seguroSocial)
+
+/*
+         val pru = listOf(V15460951.ingreso)
+
+        pru.forEach {
+            println("pruebaaaaaaaaaaaaaaaaaaaa ${it.hashCode()}")
+        }
+*/
+
+
         totalDed = V15460951.descuento.capUnefm.toDouble()+
                 V15460951.descuento.seaUnefm.toDouble()+
                 V15460951.descuento.estacionamiento.toDouble()+
