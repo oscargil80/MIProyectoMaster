@@ -2,7 +2,14 @@ package com.oscargil80.miproyectomaster
 
 fun main() {
     ifBasico()
+
+    var num = 1..6
+    println("es " +num.contains(2))
+
+
 }
+
+
 
 fun ifBasico(){
 
