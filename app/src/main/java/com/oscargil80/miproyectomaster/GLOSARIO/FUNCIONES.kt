@@ -9,9 +9,13 @@ fun main(args: Array<String>) {
     println("aprobado: " + Alumno.haAprobado(57))
 
     println("Estado de la Beca: " + Alumno.isScholar(57))
+    var name = "Oscar"
+    println(name.uppercase())
+    println(name.came())
 
 
-                                                                                            //Agregr funiones a clases desde aqui STRINGS
+
+        //Agregr funiones a clases desde aqui STRINGS
     var str1: String = "Hola "
     var str2: String = "Mundo"
 
@@ -25,9 +29,22 @@ fun main(args: Array<String>) {
 
     val valoMayor = x.valorMayor(y)
     println(valoMayor)
+
+    //Funciones de extension ejeplo,
+
+
+
                                                             // Ejemplo de INFIX FUNCION cambia el llamado asi x valorMayor2 y
     val valoMayor2 = x valorMayor2 y
     println(valoMayor2)
+}
+ fun String.feliz():String{
+  return "$this :)"
+ }
+
+fun String.came():String{
+    var cam = this.first()
+    return "$this.first().uppercase()+$this.substring(1, $this.length).lowercase()"
 }
 
 fun String.add(s1: String, s2: String): String {
