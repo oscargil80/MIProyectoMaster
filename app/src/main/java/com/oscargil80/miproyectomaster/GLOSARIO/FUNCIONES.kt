@@ -13,6 +13,12 @@ fun main(args: Array<String>) {
     println(name.uppercase())
     println(name.came())
 
+    var lala:String? = null // asi se declara nullo
+
+    if (lala.esNulo())
+        println("Oscar es nulo")
+    else
+        println("Oscar NO nulo")
 
 
         //Agregr funiones a clases desde aqui STRINGS
@@ -38,13 +44,19 @@ fun main(args: Array<String>) {
     val valoMayor2 = x valorMayor2 y
     println(valoMayor2)
 }
+
+fun Any?.esNulo():Boolean{
+    return this == null
+}
+
+
  fun String.feliz():String{
   return "$this :)"
  }
 
 fun String.came():String{
-    var cam = this.first()
-    return "$this.first().uppercase()+$this.substring(1, $this.length).lowercase()"
+    var cam = this.first().uppercase()+this.substring(1, this.length).lowercase()
+    return cam
 }
 
 fun String.add(s1: String, s2: String): String {
