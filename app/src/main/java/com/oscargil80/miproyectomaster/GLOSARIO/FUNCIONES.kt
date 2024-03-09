@@ -13,13 +13,12 @@ fun main(args: Array<String>) {
     println(name.uppercase())
     println(name.came())
 
-    var lala:String? = null // asi se declara nullo
+    var lala = null // asi se declara nullo
 
     if (lala.esNulo())
         println("Oscar es nulo")
     else
         println("Oscar NO nulo")
-
 
         //Agregr funiones a clases desde aqui STRINGS
     var str1: String = "Hola "
@@ -43,6 +42,18 @@ fun main(args: Array<String>) {
                                                             // Ejemplo de INFIX FUNCION cambia el llamado asi x valorMayor2 y
     val valoMayor2 = x valorMayor2 y
     println(valoMayor2)
+
+    val arreglo1= IntArray(10, {it})
+    arreglo1.imprimir()
+
+}
+
+fun IntArray.imprimir() {
+    print("["+this.indices)
+    for(elemento in this) {
+        print("$elemento ")
+    }
+    println("]");
 }
 
 fun Any?.esNulo():Boolean{
