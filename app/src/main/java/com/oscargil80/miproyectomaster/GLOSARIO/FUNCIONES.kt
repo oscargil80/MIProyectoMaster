@@ -5,23 +5,23 @@ package com.oscargil80.miproyectomaster.GLOSARIO
 * */
 fun main(args: Array<String>) {
 
-    var Alumno = Estudiante()
+   /* var Alumno = Estudiante()
     println("aprobado: " + Alumno.haAprobado(57))
 
     println("Estado de la Beca: " + Alumno.isScholar(57))
     var name = "Oscar"
     println(name.uppercase())
-    println(name.came())
+    println(name.came())*/
 
-    var lala = null // asi se declara nullo
+ /*   var lala = null // asi se declara nullo
 
     if (lala.esNulo())
         println("Oscar es nulo")
     else
-        println("Oscar NO nulo")
+        println("Oscar NO nulo")*/
 
         //Agregr funiones a clases desde aqui STRINGS
-    var str1: String = "Hola "
+ /*   var str1: String = "Hola "
     var str2: String = "Mundo"
 
     var str3: String = "Hey "
@@ -34,26 +34,54 @@ fun main(args: Array<String>) {
 
     val valoMayor = x.valorMayor(y)
     println(valoMayor)
-
+*/
     //Funciones de extension ejeplo,
 
 
 
                                                             // Ejemplo de INFIX FUNCION cambia el llamado asi x valorMayor2 y
-    val valoMayor2 = x valorMayor2 y
-    println(valoMayor2)
+  /*  val valoMayor2 = x valorMayor2 y
+    println(valoMayor2)*/
 
     val arreglo1= IntArray(10, {it})
     arreglo1.imprimir()
 
+    val nom= "venezuela"
+    nom.imprimir()
+
+    val ent = 10
+    ent.hasta(40)
+    35.hasta(40)
+
 }
 
 fun IntArray.imprimir() {
-    print("["+this.indices)
+    print("[")
     for(elemento in this) {
         print("$elemento ")
     }
     println("]");
+}
+
+fun String.imprimir() {
+    for(elemento in this) {
+        print("-")
+        print("$elemento ")
+    }
+    println(" ")
+}
+
+fun Int.hasta(has:Int) {
+    for (i in this..has){
+    print("$i-")
+        }
+    println(" ")
+}
+
+fun Int.hasta2(fin: Int) {
+    for(valor in this..fin)
+        print("$valor-")
+    println()
 }
 
 fun Any?.esNulo():Boolean{
