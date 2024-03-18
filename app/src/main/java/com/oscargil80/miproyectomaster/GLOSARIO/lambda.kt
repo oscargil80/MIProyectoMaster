@@ -12,8 +12,6 @@ fun main() {
 
     println(res2(2,4))
 
-
-
     val lista = listOf<Int>(5,2,4,8,9,7,10)
     var total = 0
     val  sumaPrecio:(List<Int>) -> Int = { lista -> lista.forEach{ total += it };total}
